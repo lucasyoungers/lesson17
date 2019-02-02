@@ -1,8 +1,27 @@
+// To use this program simply enter the terminal, write: node names.js <your file name> <your number> and press enter.
+
+let firstNames = GetFirstNames();
+let lastNames = GetLastNames();
+
 const args = process.argv.slice(2);
 
 // console.log(args[0]);
 
+const fs = require('fs')
 
+fs.writeFile(`${args[0]}`, numberOfNames(), function(err) {
+    if (err) throw err;
+    console.log('Saved!');
+});
+
+function numberOfNames() {
+    for (let i = 0; i < args[1]; i++) {
+        fs.appendFile(`${args[0]}`, `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}, `, function(err){
+            if (err) throw err;
+            console.log('Saved!');
+        });
+    }
+}
 
 // Returns an array for First names
 function GetFirstNames() {
