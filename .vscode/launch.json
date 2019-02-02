@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "randomName Debugger",
+            "program": "${workspaceFolder}/randomName.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}/app.js"
         }
