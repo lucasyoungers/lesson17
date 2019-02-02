@@ -1,3 +1,9 @@
+const args = process.argv.slice(2);
+
+// console.log(args[0]);
+
+
+
 // Returns an array for First names
 function GetFirstNames() {
     return ['Aaran',
