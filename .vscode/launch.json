@@ -21,6 +21,12 @@
             "request": "launch",
             "name": "namesFile Debugger",
             "program": "${workspaceFolder}/namesFile.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "names Debugger",
+            "program": "${workspaceFolder}/names.js"
         }
     ]
 }
