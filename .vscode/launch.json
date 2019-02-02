@@ -7,14 +7,20 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "app Debugger",
+            "program": "${workspaceFolder}/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "randomName Debugger",
             "program": "${workspaceFolder}/randomName.js"
         },
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js"
+            "name": "namesFile Debugger",
+            "program": "${workspaceFolder}/namesFile.js"
         }
     ]
 }
